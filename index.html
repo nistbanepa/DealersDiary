@@ -1,0 +1,148 @@
+<!doctype Html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index</title>
+	<meta name ="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style type="text/css">
+		* {box-sizing:border-box;}
+
+		form.searchstyle input[type=text]{
+			width: 80%;
+			padding: 10px;
+			font-size: 17px;
+			border: 1px solid grey;
+			float: left;
+			background: #f1f1f1;
+			box-shadow: 4px 4px lightgrey;
+			border-top-left-radius: 9px;
+			border-bottom-left-radius: 9px;
+		}
+		form.searchstyle button{
+			width:20%;
+			padding:10px;
+			font-size: 17px;
+			border:1px solid grey;
+			float:left;
+			background: #2196F3;
+			color:white;
+			cursor:pointer;
+			border-left:none;
+			box-shadow: 4px 4px lightgrey;
+			border-bottom-right-radius: 9px;
+			border-top-right-radius: 9px;
+		}
+		form.searchstyle button:hover{
+			background-color: #0b7dda;
+		}
+		form.searchstyle::after{
+			display: table;
+			clear: both;
+			content: "";
+		}
+			
+		.body{
+			/*background-image: url(Cool-Sunset-Background.jpg);*/
+			background:linear-gradient(to left, lightblue, azure);
+			background-size:100%;
+			font-family: Arial;
+		}
+		h1{
+			/*color:cyan;*/
+			color: #0b7dda;
+			text-align:center;
+			font-size:60px;
+			font-weight:bolder;
+			text-shadow: 4px 4px #9AC0B6; 
+		}
+
+		div form{
+			clear:both;
+			position:relative;
+			top: 200px;
+			left: 0%;		
+		}
+		div ul {
+			clear:both;
+			position:absolute;
+			top:63%;
+			left:18%;	
+		}
+		li.linkbutton {
+			padding:5px;
+			margin-right:10px;
+			border:solid brown 2px;
+			border-radius:20px;
+			box-shadow: 5px 5px lightgrey;
+			width:190px;
+			height:40px;
+			text-align: center;
+			font-size:20px;
+			float:left;
+			background-color: lightgrey;
+			list-style-type: none;
+		}
+		div ul li:hover{
+			border: 4px double darkblue;
+			height:42px;	
+		}
+		div iframe[id="left"]{
+			height: 100%;
+			width:20%;
+			position:fixed;
+			top: 0%;
+			left: 0%;
+		}
+
+		div iframe[id="right"]{
+			height: 100%;
+			width:20%;
+			position:fixed;
+			top: 0%;
+			right: 0%;
+		}
+
+		a:link , a:visited{color:blue; }
+		a:hover{color:darkblue; }
+		a:active{color:red; }
+		
+		nav ul li{
+			background-color:  #2196F3;
+		}
+	</style>
+</head>
+
+<body class="body">
+
+<h1>Dealer's Diary</h1>
+<span style="box-align:center; position:absolute;left:43%;" ><img src="./photoes/LogoMakr_9JfxgY.png"></span>
+
+<div id="divforsearch" >
+	<form class="searchstyle" action="/action_page.php" style="margin:auto; max-width:500px; ">
+		<input type="text" placeholder="Search.." name=  "search2" title=" type here">
+		<button type="submit" title ="search"><i class="fa fa-search"></i></button>
+	</form>
+</div>
+
+<div>
+	<ul>
+		<li class="linkbutton"><a href="new-products.html">New Products</a></li>
+		<li class="linkbutton"><a href="#stockds.html">Stocks</a></li>
+		<li class="linkbutton" style="width:200px;"><a href="#Transaction.html">Today's Transaction</a></li>
+		<li class="linkbutton"><a href="account_info.html"> Account Info</a></li>
+	</ul>
+</div>
+<div style="color:brown; text-align:center; position:absolute;left:40%;top:80%">
+	<p><strong> For more information</strong><br>
+		Contact us on:<br>
+		Email: <a href="mailto:acharyasamir18@gmail.com">acharyasamir18@gmal.com</a><br>
+		Mobile: 984123456
+	</p>
+</div>		
+<div><iframe id="left" src="latest-arrivals.html"></iframe></div>
+<div><iframe id="right" src="mostsold.html"></iframe></div>
+
+</body>
+</html>
