@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Account Information</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style type="text/css">
+
+		#heading{
+			color:blue;
+			font-size:45px;
+			font-weight:bolder;
+			font-family: monospace;
+			float:left;
+			text-indent:200px;
+			text-shadow:3px 3px grey;
+		}
+		#alert{
+			text-shadow: 3px 3px grey;
+			font-family: system-ui;
+
+		}
+		ul.content {
+			list-style-type: none;
+			padding: 10px;
+			overflow: hidden;
+			font-size: 25px;
+			font-family: cursive;
+			font-weight:bold;	
+			text-indent: 20px; 	
+			line-height: 35px;
+			text-align: center;
+		}
+		#info{
+			position:absolute;
+			left:4%;
+		}
+		span{
+			color:blue;
+			font:bolder;
+		}
+
+		ul.navbar{
+			list-style-type: none;
+			padding: 10px;
+			overflow: hidden;
+			color: #001fa1; 
+			background:linear-gradient(to right, #d0d0d0, #c0c0c0);
+			font-weight: bold;
+			font-size: 16px;
+			font-family: monospace;
+		}
+		
+		li.navbar{
+			float:right;
+			margin-right:20px;
+		}
+		input[type=button], input[type=submit], input[type=reset] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 8px 16px;
+			cursor: pointer;
+			border-radius: 10px;
+			margin-top:10px; 
+		}
+		input[type=text], input[type=textarea], input[type=character]{
+			height:20px;
+			width:160px;
+			padding:2px;
+			border-radius: 3px;
+		}
+		#signupcontent{
+			line-height: 30px;
+			font-family: monospace;
+			font-size:25px;
+			padding:10px;
+			font-style:initial;
+			position:absolute;
+			right:8%;
+		}
+		
+		ul.menu {
+    		list-style-type: none;
+    		margin: 0;
+    		padding: 0;
+    		overflow: hidden;
+    		background-color: #a0a0a0;
+    	}
+    	li.menu {
+    		float: left;
+    	}
+    	li.menu a {
+    		display: block;
+    		color: white;
+    		text-align: center;
+    		padding: 14px 16px;
+    		text-decoration: none;
+    		border:1px white solid;
+    	}
+    	li.menu a:hover:not(.active) {
+    		background-color: #505050;
+    	}
+		.active {
+		  background-color: #4CAF50;
+		}
+
+		body{
+			background: linear-gradient(to right, #d0d0d0, #f1f1f1);
+			margin:0;
+		}
+	</style>
+</head>
+
+<body>
+
+<div>
+	<ul class="menu">
+		<li class="menu"><a href="new-products.html">New Products</a></li>
+		<li class="menu"><a href="Stocks.html" >Stocks</a></li>
+		<li class="menu"><a href="#tranxns.html">Today's Transaction</a></li>
+		<li class="menu"style="float:right; padding-right:10px; color:green;"><a href="account_info.html" class="active">Account Info </a></li>
+	</ul>
+</div>
+
+<div style="position:relative;top:-15px;left:0%; width:100%;">
+<ul class="navbar">
+	<li id="heading"> Dealer's Diary</li>
+	<li class="navbar"><input  type="button" name="login" value="Log In"></li>
+	<li class="navbar">Password<br><input type="text" maxlength="32" placeholder=" Password"><br>
+		<a href="#forgotpassword.html">Forgot password?</a></li>
+	<li class="navbar">Email or Phone <br> <input type="text" maxlength="128" placeholder="  Email or Phone">  </li>
+</ul>
+
+<div id="signupcontent">
+	<h1 id="alert">Sign Up</h1><p>It's easy and quick!</p>
+	<input type="text" placeholder="  First Name" active="">
+	<input type="text" placeholder="  Last Name"><br>
+	<input type="text" placeholder="  Email or Phone Number"><br>
+	<input type="character" placeholder="  Credit Card Number"><br>
+	<label>Birthday<br>
+	<input type="date" id=" dob"> ?</label><br>
+	<label>Gender<br><input type="radio" name="gender" value="Male">Male 
+		<input type="radio" name="gender" value="Female">Female 
+		<input type="radio" name="gender" value="Custom">Custom ?</label> <br>
+	<input type="button" name="submit" value="submit">
+</div>
+
+<div id="info">
+	<h1>Why Sign Up?<br>- Special discount for <span>registered customer</span> !</h1><br>
+	<ul class="content">
+		<li>See latest Fancy items</li>
+		<li>Share your feedback to us</li>
+		<li>What you're looking for with <br><span>Dealer's Diary Search</span> !</li>
+	</ul>
+</div>
+
+</div>
+</body>
+</html>
+
+<!--
+<i class="fas fa-cloud"></i>
+<i class="fas fa-heart"></i>
+<i class="fas fa-car"></i>
+<i class="fas fa-file"></i>
+<i class="fas fa-bars"></i>
+-->
