@@ -5,6 +5,7 @@
 
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style type="text/css">
     	#fixedheading{
@@ -14,17 +15,17 @@
     		width:100%;
     	}
 
-    	ul {
+    	ul.menu {
     		list-style-type: none;
     		margin: 0;
     		padding: 0;
     		overflow: hidden;
     		background-color: #a0a0a0;
     	}
-    	li {
+    	li.menu {
     		float: left;
     	}
-    	li a {
+    	li.menu a {
     		display: block;
     		color: white;
     		text-align: center;
@@ -32,7 +33,7 @@
     		text-decoration: none;
     		border:1px white solid;
     	}
-    	li a:hover:not(.active) {
+    	li.menu a:hover:not(.active) {
     		background-color: #505050;
     	}
 		.active {
@@ -67,7 +68,6 @@
 			border:1px grey solid;
 			border-radius: 5px;
 			padding:5px 10px;
-			float:left;
 			clear:auto;
 			height:320px;
 			margin:10px 30px;
@@ -93,15 +93,36 @@
 	    	background-color:linen;
 	    	margin:0;
 	    }
+	    form.searchstyle input[type=text] {
+			  padding: 10px;
+			  font-size: 17px;
+			  margin:3px 10px;
+			  border: 1px solid grey;
+			  border-radius: 10px;
+			  float: left;
+			  background: #f1f1f1;
+		}
+		form.searchstyle::after {
+		  content: "";
+		  clear: both;
+		  display: table;
+		}
 </style>
 </head>
 <body>
 <div id="fixedheading">
-	<ul class="navig">
-			<li class="navig"><a href="#newproducts" class="active">New Products</a></li>
-			<li class="navig"><a href="Stocks.html">Stocks</a></li>
-			<li class="navig"><a href="#tranxns.html">Today's Transaction</a></li>
-			<li class="navig"style="float:right; padding-right:10px; color:green;"><a href="account_info.html">Account Info </a></li>
+	<ul class="menu">
+		 	<li class="menu"><a href="index.html">Home</a></li>
+			<li class="menu"><a href="#newproducts" class="active">New Products</a></li>
+			<li class="menu"><a href="Stocks.html">Stocks</a></li>
+			<li class="menu"><a href="#tranxns.html">Today's Transaction</a></li>
+				
+			<li class="menu" style="float:right; padding-right:10px; color:green;"><a href="account_info.html">Account Info </a></li>
+			<li style="float:right;"><div>
+				<form class="searchstyle" action="/action_page.php" style="margin:auto; max-width:500px;">
+					<input type="text" placeholder="Search.." name="search">
+				</form></div>
+			</li>
 		</ul>
 </div>
 	
